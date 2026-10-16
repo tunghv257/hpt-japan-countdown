@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan Countdown</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="features.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <div id="header">
+        <a id="title" href="#home">🍁 HPT</a>
+        <nav id="menu-option">
+            <a class="option-item" href="#home">Home</a>
+            <a class="option-item" href="#checklist">Checklist</a>
+            <a class="option-item" href="#setting">Setting</a>
+        </nav>
+    </div>
+    <div id="main">
+        <h1 id="quote-main">Japan Countdown</h1>
+        <p id="quote-sub">Nhật Bản còn phải chờ HPT bao nhiêu ngày nữa nhỉiii?</p>
+        <div id="time-box">
+            <div class="time-unit">
+                <span id="days">00</span>
+                <span class="time-label">Days</span>
+            </div>
+            <div class="time-unit">
+                <span id="hours">00</span>
+                <span class="time-label">Hours</span>
+            </div>
+            <div class="time-unit">
+                <span id="mins">00</span>
+                <span class="time-label">Minutes</span>
+            </div>
+            <div class="time-unit">
+                <span id="secs">00</span>
+                <span class="time-label">Seconds</span>
+            </div>                        
+        </div>
+    </div>
+
+    <!-- ===== CHECKLIST PAGE ===== -->
+    <section id="checklist" class="sub-page" hidden>
+        <div class="feature-card">
+            <h2>🧳 Japan Checklist</h2>
+            <p class="feature-subtitle">
+                Khách VIP chuẩn bị đến đâu rồi nhỉ? 🍁
+            </p>
+
+            <p id="check-progress">0/0 món đã chuẩn bị</p>
+
+            <div id="checklist-items"></div>
+
+            <form id="task-form">
+                <input
+                    id="new-task"
+                    type="text"
+                    placeholder="Thêm món cần chuẩn bị..."
+                    maxlength="80"
+                    required
+                >
+                <button type="submit">+ Thêm</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== SETTING PAGE ===== -->
+    <section id="setting" class="sub-page" hidden>
+        <div class="feature-card setting-card">
+            <h2>🎨 Setting</h2>
+            <p class="feature-subtitle">
+                Đổi một chút phong cảnh Nhật Bản đeeee!!!
+            </p>
+
+            <h3>Hình nền</h3>
+
+            <div class="background-actions">
+                <label for="background-input" class="action-btn">
+                    📷 Chọn ảnh từ thiết bị
+                </label>
+
+                <input
+                    id="background-input"
+                    class="visually-hidden"
+                    type="file"
+                    accept="image/*"
+                >
+
+                <button
+                    id="reset-background"
+                    class="secondary-btn"
+                    type="button"
+                >
+                    🍁 Phú Sĩ mặc định
+                </button>
+            </div>
+
+            <p id="bg-status" class="feature-note" aria-live="polite"></p>
+        </div>
+    </section>
+
+    <div id="footer">
+        Chúc HPT có 1 chuyến đi đáng nhớ!!!<br>
+        Nhớ vote 5 sao cho dịch vụ tour Nhật Bản TùngTravel nkaa.<br>
+        Hẹn gặp HPT vào 1 ngày không xaaa.
+    </div>    
+  </main>
+</body>
+</html>
